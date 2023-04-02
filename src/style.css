@@ -1,0 +1,484 @@
+:root{
+    --main-color: #0052cc;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 30px 80px;
+}
+/* header section */
+.header{
+    padding: 0px 80px;
+}
+.header .devider{
+    height: 25px;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0px 15px;
+}
+.header .try-now{
+    background-color: var(--main-color);
+}
+.header .try-now:hover{
+    background-color: #0047B3;
+}
+.header .buy-now{
+    color: var(--main-color);
+}
+.header .buy-now:hover{
+    background-color: #EBECF0;
+}
+.header .account{
+    cursor: pointer;
+}
+.header .account:hover{
+    background-color: #EBECF0;
+}
+.drop-down{
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 222;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.drop-down .fa-xmark{
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+.drop-down.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.drop-down h4{
+    color: #42526E;
+    letter-spacing: 1px;
+}
+.drop-down .img-logo{
+    background-color: #e7e7e7;
+    border-radius: 4px;
+}
+.drop-down h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+.drop-down p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.drop-down a{
+    font-size: 15px;
+    color: #0052cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+.drop-down .fa-lightbulb{
+    font-size: 22px;
+}
+.drop-down .product{
+    background-color: #DEEBFF;
+    border-radius: 5px;
+}
+.drop-down .product .img-logo{
+    background-color: #fff;
+    border-radius: 4px;
+}
+.drop-down ul{
+    padding: 0;
+}
+.drop-down ul li{
+    list-style: none;
+}
+.drop-down ul li a{
+    text-decoration: none;
+    color: #42526E;
+    font-size: 14px;
+}
+
+
+.drop-down2{
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 222;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.drop-down2 .fa-xmark{
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+.drop-down2.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.drop-down2 h4{
+    color: #42526E;
+    letter-spacing: 1px;
+}
+.drop-down2 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.drop-down3{
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 222;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.drop-down3 .fa-xmark{
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+.drop-down3.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.drop-down3 h4{
+    color: #42526E;
+    letter-spacing: 1px;
+}
+.drop-down3 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* home section */
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* padding: 30px 80px; */
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .content h1{
+    font-size: 6rem;
+}
+.home .content h1 em{
+    padding-left: 29px !important;
+}
+.home .img-div{
+    flex: 1 1 60rem;
+}
+.home .img-div img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* register section */
+.reg-bg{
+    width: 100%;
+    height: 300px;
+    background: url(../public/images/wave.svg);
+    background-size: 100% 100%;
+    /* background-position: center; */
+    /* object-fit: cover; */
+}
+.register{
+    /* top: 60px;
+    left: 220px; */
+    background: linear-gradient(90deg, #C477D9 0.02%, #403294 20.33%, #091E42 100%);
+    border-radius: 10px;
+}
+.register a{
+    color: #FFBDF0 !important;
+}
+
+/* work section */
+/* .work{
+    padding: 30px 80px;
+} */
+.work button{
+    background-color: #DEEBFF;
+    color: #0052CC;
+    font-weight: 900;
+    padding: 30px 60px;
+}
+.work .work-details a{
+    font-size: 15px;
+    color: #0052cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+.work .work-details .img-logo{
+    background-color: #e7e7e7;
+    border-radius: 4px;
+}
+.work .work-details h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+.work .work-details p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.div-hide1.active{
+    display: none !important;
+}
+.div-hide2.active{
+    display: none !important;
+}
+.div-hide3.active{
+    display: flex !important;
+}
+.div-hide3{
+    display: none !important;
+}
+
+/* brands */
+.play{
+    color: #0052cc !important;
+    font-weight: 600 !important;
+}
+.brands{
+    /* background-color: #E3EEFF; */
+    background: linear-gradient(to bottom, #ffffff8e, #E3EEFF);
+    /* padding: 50px 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brands div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brands img{
+    width: 150px;
+    height: 150px;
+}
+/* community section */
+/* .community{
+    padding: 30px 80px;
+} */
+.community h5{
+    color: #188DA6;
+    font-weight: 900 !important;
+    letter-spacing: 3px;
+    line-height: 50px !important;
+}
+.community h1{
+    font-size: 35px;
+    line-height: 40px;
+}
+.community .content{
+    background-color: #FFEBE5;
+}
+.community .content p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.community .content a{
+    color: #0052cc;
+    font-size: 17px;
+}
+/* service section */
+/* .service{
+    padding: 10px 80px;
+} */
+.service h2{
+    font-weight: 900 !important;
+}
+.service p{
+    font-weight: 600 !important;
+}
+.service a{
+    color: #0052cc !important;
+    font-weight: 600;
+}
+.service .card:hover{
+    box-shadow: 3px 3px 6px 6px #ddd;
+}
+/* events section */
+/* .events{
+    padding: 30px 80px;
+} */
+.events h4{
+    color: #008DA6;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+.events h1{
+    font-size: 35px;
+}
+.events a{
+    text-decoration: none;
+    color: #0052cc;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+/* career section */
+.career{
+    /* padding: 30px 80px; */
+    overflow: hidden;
+}
+.career h4{
+    color: #008DA6;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+.career h1{
+    font-size: 37px;
+}
+.career p{
+    font-size: 17px;
+    font-weight: 600;
+    color: #42526E;
+}
+.career button{
+    background-color: #0047B3;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.career .bg-1{
+    bottom: 0;
+    left: -200px;
+    z-index: -1;
+}
+.career .bg-2{
+    bottom: 0;
+    right: -198px;
+    z-index: -1;
+}
+/* footer section */
+.footer{
+    /* padding: 30px 80px; */
+    background-color: #F4F5F7;
+}
+.footer h4{
+    font-weight: 700;
+    color: #42526E;
+    font-size: 17px;
+}
+.footer ul{
+    padding: 0;
+    margin: 0;
+}
+.footer ul li{
+    list-style: none;
+    padding: 0;
+}
+.footer ul li a{
+    padding: 0 0px !important;
+    font-size: 15px;
+    color: #42526E;
+    font-weight: 400;
+}
+
+.footer .links ul li{
+    display: inline-block;
+    /* padding: 0px 20px; */
+}
+.footer .links select{
+    background: #F4F5F7;
+    border: none;
+    color: #42526E;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer .links .fa-globe{
+    font-size: 14px;
+}
+.footer .links i{
+    font-size: 30px;
+    padding: 0 5px;
+}
+.footer .links .fa-square-facebook{
+    color: #3C5A99;
+} 
+.footer .links .fa-twitter{
+    color: #60A9DC;
+} 
+.footer .links .fa-linkedin{
+    color: #016699;
+}
+.footer .links .fa-youtube{
+    color: #42526E;
+}
+.footer .links ul li a{
+    padding: 0 20px !important;
+} 
+
+
+/* media query */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 30px 30px;
+    }
+}
+
+@media(max-width:768px){
+    .home .content h1{
+        font-size: 4rem;
+        text-align: center !important;
+    }
+    /* .home .content h1 em{
+        padding-left: 10px !important;
+    } */
+    .drop-down{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .drop-down2{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .drop-down3{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .border-remove{
+        border: none !important;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 0px 0px;
+    }
+    .header .nav-item .nav-link{
+        padding-left: 0 !important;
+    }
+    .header .account{
+        padding-left: 0 !important;
+    }
+    .header .account .fa-user{
+        padding-left: 0 !important;
+    }
+}
